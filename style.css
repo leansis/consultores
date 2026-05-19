@@ -268,11 +268,9 @@ a {
     padding: 100px 0;
 
     background:
-        radial-gradient(circle at top right,
-        rgba(109,93,252,0.12),
+        radial-gradient(circle at center,
+        var(--accent),
         transparent 35%),
-        linear-gradient(to bottom, #fafafe, #ffffff);
-
 }
 
 .section-title {

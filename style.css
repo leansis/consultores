@@ -269,10 +269,10 @@ a {
 
 background:
     radial-gradient(
-        circle,
-        white 0%,
-        white 30%,
-        var(--accent) 100%
+        circle at center,
+        #ffffff 0%,
+        #ffffff 60%,
+        color-mix(in srgb, var(--accent) 5%, white) 100%
     );
 
 .section-title {

@@ -1,4 +1,4 @@
-const GOZEN_APP = {
+const TIMING_APP = {
     screens: [
         {
             title: "Panel de Administración",
@@ -29,11 +29,11 @@ const ROADMAP_APP = {
 };
 
 function renderApps() {
-    const gozenGrid = document.getElementById('grid-gozen');
+    const timingGrid = document.getElementById('grid-timing');
     const roadmapGrid = document.getElementById('grid-roadmap');
 
-    if (gozenGrid) {
-        gozenGrid.innerHTML = GOZEN_APP.screens.map((screen) => `
+    if (timingGrid) {
+        timingGrid.innerHTML = TIMING_APP.screens.map((screen) => `
             <div class="screenshot-container">
                 <div class="screenshot-info">
                     <h3>${screen.title}</h3>

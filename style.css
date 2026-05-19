@@ -125,7 +125,7 @@ a {
     right: -120px;
     width: 420px;
     height: 420px;
-    background: rgba(109,93,252,0.15);
+    background: var(--accent-soft);
     filter: blur(90px);
     border-radius: 50%;
     pointer-events: none;

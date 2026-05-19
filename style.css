@@ -207,7 +207,7 @@ a {
         opacity .25s ease;
 }
 
-.cta-button:hover a:hover{
+.cta-button:hover, a:hover{
     transform: translateY(-2px);
     opacity: .95;
 }

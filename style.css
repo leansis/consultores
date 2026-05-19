@@ -268,11 +268,11 @@ a {
     padding: 100px 0;
 
     background:
-        linear-gradient(
-            to bottom,
-            #ffffff,
-            #fcfcff
-        );
+        radial-gradient(circle at top right,
+        rgba(109,93,252,0.12),
+        transparent 35%),
+        linear-gradient(to bottom, #fafafe, #ffffff);
+
 }
 
 .section-title {

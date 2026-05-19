@@ -190,11 +190,7 @@ a {
 .cta-button {
     display: inline-block;
 
-    background: linear-gradient(
-        135deg,
-        var(--accent),
-        #8a7dff
-    );
+    background: var(--accent);
 
     color: #fff;
     padding: 14px 34px;

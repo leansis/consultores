@@ -108,7 +108,7 @@ a {
     background:
         radial-gradient(
             circle at top right,
-            rgba(109,93,252,0.12),
+            var(--accent-soft)
             transparent 35%
         ),
         linear-gradient(

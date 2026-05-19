@@ -9,6 +9,21 @@
     --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
 }
 
+.screenshot-container {
+    --accent: #3b82f6; /* fallback */
+
+    background: linear-gradient(
+        to right,
+        #ffffff 0%,
+        #ffffff 70%,
+        color-mix(in srgb, var(--accent) 10%, white) 100%
+    );
+
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
 .roadmap-theme {
     --accent: #6d5dfc;
     --accent-light: #f3f1ff;

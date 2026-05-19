@@ -18,12 +18,12 @@ const ROADMAP_APP = {
         {
             title: "Hoja de Ruta Digital",
             description: "Visualización de hitos, objetivos y estado de digitalización por áreas.",
-            image: "imagenes/digitalroadmapadmin.png"
+            image: "imagenes/roadmap-inicio.png"
         },
         {
             title: "Análisis de Madurez",
             description: "Evaluación técnica de capacidades digitales y brechas operativas.",
-            image: "imagenes/digitalroadmapadmin2.png"
+            image: "imagenes/roadmap-diagrama2.png"
         }
     ]
 };

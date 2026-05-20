@@ -13,6 +13,22 @@ const TIMING_APP = {
     ]
 };
 
+const CRM_APP = {
+    screens: [
+        {
+            title: "Iicio",
+            description: "Gestión centralizada de empresas y usuarios con acceso maestro.",
+            image: "imagenes/crm-inicio.jpg"
+        },
+        {
+            title: "Matriz de Polivalencia",
+            description: "Visualización técnica de equipos, procesos y autoevaluaciones en tiempo real.",
+            image: "imagenes/panel.png"
+        }
+    ]
+};
+
+
 const ROADMAP_APP = {
     screens: [
         {
@@ -31,7 +47,9 @@ const ROADMAP_APP = {
 function renderApps() {
     const timingGrid = document.getElementById('grid-timing');
     const roadmapGrid = document.getElementById('grid-roadmap');
+    const crmGrid = document.getElementById('grid-crm');
 
+    
     if (timingGrid) {
         timingGrid.innerHTML = TIMING_APP.screens.map((screen) => `
             <div class="screenshot-container">
@@ -46,6 +64,18 @@ function renderApps() {
 
     if (roadmapGrid) {
         roadmapGrid.innerHTML = ROADMAP_APP.screens.map((screen) => `
+            <div class="screenshot-container">
+                <div class="screenshot-info">
+                    <h3>${screen.title}</h3>
+                    <p>${screen.description}</p>
+                </div>
+                <img src="${screen.image}" alt="${screen.title}" class="screenshot-img" onerror="this.src='https://placehold.co/1200x800/f8f9fa/333333?text=${encodeURIComponent(screen.title)}'">
+            </div>
+        `).join('');
+    }
+
+    if (crmGrid) {
+        crmGrid.innerHTML = CRM_APP.screens.map((screen) => `
             <div class="screenshot-container">
                 <div class="screenshot-info">
                     <h3>${screen.title}</h3>

@@ -16,14 +16,9 @@ const TIMING_APP = {
 const CRM_APP = {
     screens: [
         {
-            title: "Iicio",
+            title: "Inicio",
             description: "Gestión centralizada de empresas y usuarios con acceso maestro.",
-            image: "imagenes/crm-inicio.jpg"
-        },
-        {
-            title: "Matriz de Polivalencia",
-            description: "Visualización técnica de equipos, procesos y autoevaluaciones en tiempo real.",
-            image: "imagenes/panel.png"
+            image: "imagenes/crm-inicio.png"
         }
     ]
 };

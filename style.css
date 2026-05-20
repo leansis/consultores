@@ -483,8 +483,7 @@ a {
 /* Hover imagen */
 
 .feature-video:hover .feature-image {
-    opacity: .18;
-    filter: blur(8px);
+    opacity: 0;
     transform: scale(1.05);
 }
 

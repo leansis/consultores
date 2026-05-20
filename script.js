@@ -16,9 +16,9 @@ const TIMING_APP = {
 const CRM_APP = {
     screens: [
         {
-            title: "Inicio",
-            description: "Gestión centralizada de empresas y usuarios con acceso maestro.",
-            image: "imagenes/crm-inicio.png"
+            title: "Guia de la aplicacion",
+            description: "Tour de muestra por todos los sistemas y apartados de la aplicación.",
+            image: "https://www.youtube.com/embed/5W4t12gKm3M?si=1eSJzuO5vgAhFm3P"
         }
     ]
 };
@@ -76,7 +76,7 @@ function renderApps() {
                     <h3>${screen.title}</h3>
                     <p>${screen.description}</p>
                 </div>
-                <img src="${screen.image}" alt="${screen.title}" class="screenshot-img" onerror="this.src='https://placehold.co/1200x800/f8f9fa/333333?text=${encodeURIComponent(screen.title)}'">
+                    <iframe class="screenshot-img" src="${screen.image}" alt="${screen.title}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         `).join('');
     }

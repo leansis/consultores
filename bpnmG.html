@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leansis Productivity | BPMN generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body class="bpmng-theme">
+    <nav class="nav">
+        <div class="nav-container">
+            <img src="imagenes/logo.png" alt="leansis" class="imagenlogo">
+            <a href="index.html" style="font-size: 13px; color: #666;">← Volver</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ── Hero ── -->
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1>BPMN generator</h1>
+                    <p>placeholder</p>
+                    <div style="display: flex; flex-direction: row; gap: 12px; flex-wrap: wrap; align-items: center; justify-content:center;">
+                        <a href="https://bpmn-gen.vercel.app/#landing" target="_blank" class="cta-button">
+                            Acceder a la App
+                        </a>
+                        <a href="manuales/manual-bpmnG.pdf" style="font-weight:600; font-size:14px; background-color: orange; color: white; border-radius: 10px; padding: 14px 15px; display:flex; flex-direction: column; justify-content: center; align-items: center;">
+                            ↓ Manual PDF
+                        </a>
+                    </div>
+                </div>
+                <div class="video-container">
+                    <video loop muted autoplay playsinline>
+                        <source src="videos/" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── Galería de capturas ── -->
+        <section class="screenshots-section">
+            <div class="section-title">
+                <h2>Explorar la Interfaz</h2>
+            </div>
+            <div class="screenshots-grid" id="grid-bpmnG">
+                <!-- Populated by script.js -->
+            </div>
+        </section>
+
+        <!-- ── Bloques de funcionalidades ── -->
+        <section class="features-section">
+            <div class="section-title">
+                <h2>Funcionalidades Clave</h2>
+            </div>
+
+            <!-- Bloque 1 -->
+            <div class="feature-block">
+                <div class="feature-video">
+                    <img src="imagenes/roadmap-diagrama.jpeg" alt="Diagrama" class="feature-image">
+                </div>
+                <div class="feature-text">
+                    <span class="feature-tag">Diagnóstico</span>
+                    <h3>Diagrama de procesos y oportunidades</h3>
+                    <p>Visualiza el mapa completo de la organización agrupado por actividades y procesos. Cada oportunidad aparece como una tarjeta dentro de su proceso, con su impacto, dificultad y estado de un vistazo.</p>
+                    <ul class="feature-list">
+                        <li>Organización por actividades y procesos con tarjetas de oportunidad</li>
+                        <li>Estado visual inmediato: planificado, en curso, finalizado y más</li>
+                        <li>Añade y elimina oportunidades directamente desde el diagrama</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bloque 2 -->
+            <div class="feature-block reverse">
+                <div class="feature-video">
+                    <img src="imagenes/roadmap-listado-oportunidades.jpeg" alt="Listado de oportunidades" class="feature-image">
+                </div>
+                <div class="feature-text">
+                    <span class="feature-tag">Oportunidades</span>
+                    <h3>Registro centralizado de oportunidades</h3>
+                    <p>Consulta todas las iniciativas en una tabla unificada con sus datos clave. Filtra por estado o equipo, ordena por cualquier columna y localiza cualquier oportunidad al instante con el buscador integrado.</p>
+                    <ul class="feature-list">
+                        <li>Vista tabular con impacto, dificultad, estado y prioridad calculada</li>
+                        <li>Búsqueda en tiempo real y filtrado por estado o equipo</li>
+                        <li>Score de priorización automático para orientar la toma de decisiones</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bloque 3 -->
+            <div class="feature-block">
+                <div class="feature-video">
+                    <img src="imagenes/roadmap-matriz.jpeg" alt="Matriz impacto / dificultad" class="feature-image">
+                </div>
+                <div class="feature-text">
+                    <span class="feature-tag">Priorización</span>
+                    <h3>Matriz impacto / dificultad</h3>
+                    <p>Posiciona cada iniciativa en un cuadrante interactivo según su valor potencial y su esfuerzo de implementación. Identifica los quick wins al instante y decide con criterio objetivo qué ejecutar primero.</p>
+                    <ul class="feature-list">
+                        <li>Cuatro cuadrantes: Quick Wins, Proyectos Mayores, Rellenos y Tareas Ingratas</li>
+                        <li>Clic en cualquier punto para ver el detalle completo de la iniciativa</li>
+                        <li>Leyenda de estados con código de color para filtrar visualmente</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bloque 4 -->
+            <div class="feature-block reverse">
+                <div class="feature-video">
+                    <img src="imagenes/roadmap-informe-pdf.png" alt="Informe ejecutivo y exportación PDF" class="feature-image">
+                </div>
+                <div class="feature-text">
+                    <span class="feature-tag">Reporting</span>
+                    <h3>Informe ejecutivo listo para presentar</h3>
+                    <p>Genera en un clic una vista limpia con la matriz de priorización y el listado completo de oportunidades, optimizada para impresión o exportación a PDF. Lista para llevar a cualquier reunión de dirección.</p>
+                    <ul class="feature-list">
+                        <li>Vista de impresión sin elementos de navegación ni distracciones</li>
+                        <li>Incluye matriz impacto/dificultad y tabla completa de iniciativas</li>
+                        <li>Exportación directa a PDF desde el navegador con un solo clic</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="copyright">© <span id="year"></span> Leansis Productivity.</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

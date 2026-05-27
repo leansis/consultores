@@ -563,8 +563,7 @@ img {
 
 .frame {
   width: 100%;
-  max-width: 500px;
-  height: 300px;
+  height: 500px;
   overflow: hidden;
   border-radius: 16px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);

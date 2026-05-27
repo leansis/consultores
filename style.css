@@ -27,6 +27,12 @@
     --accent-soft: rgba(255, 208, 0, 0.12);
 }
 
+.bpmnG-theme {
+    --accent: #ff7b00;
+    --accent-light: #fff5eb;
+    --accent-soft: rgba(255, 123, 0, 0.12);
+}
+
 * {
     margin: 0;
     padding: 0;

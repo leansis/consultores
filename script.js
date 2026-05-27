@@ -92,7 +92,11 @@ function renderApps() {
   const slide = document.getElementById("slide");
 
   function show() {
-    slide.src = images[index];
+    slide.style.opacity = 0;
+    setTimeout(() => {
+      slide.src = images[index];
+      slide.style.opacity = 1;
+    }, 150);
   }
 
   function next() {

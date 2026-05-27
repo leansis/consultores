@@ -86,7 +86,7 @@ function renderApps() {
 
 // Carrusel logica
 
-  const images = ["bpmnG-ej1.png", "bpmnG-ej2.png", "bpmnG-ej3.png", "bpmnG-ej1.png"];
+  const images = ["imagenes/bpmnG-ej1.png", "imagenes/bpmnG-ej2.png", "imagenes/bpmnG-ej3.png"];
   let index = 0;
 
   const slide = document.getElementById("slide");

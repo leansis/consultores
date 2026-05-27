@@ -84,6 +84,29 @@ function renderApps() {
     initScrollReveal();
 }
 
+// Carrusel logica
+
+  const images = ["bpmnG-ej1.png", "bpmnG-ej2.png", "bpmnG-ej3.png", "bpmnG-ej1.png"];
+  let index = 0;
+
+  const slide = document.getElementById("slide");
+
+  function show() {
+    slide.src = images[index];
+  }
+
+  function next() {
+    index = (index + 1) % images.length;
+    show();
+  }
+
+  function prev() {
+    index = (index - 1 + images.length) % images.length;
+    show();
+  }
+
+// 
+
 function initScrollReveal() {
     const observerOptions = {
         threshold: 0.15,

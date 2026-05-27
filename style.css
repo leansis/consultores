@@ -549,6 +549,18 @@ img {
 }
 
 /* ───────────────────────────── */
+/* Carrusel */
+/* ───────────────────────────── */
+
+.carousel {
+    display: flex;
+    flex-direction: row;
+    inline-margin: 50px;
+    aling-items: center;
+    justify-content: spaced-arround;
+}
+
+/* ───────────────────────────── */
 /* RESPONSIVE */
 /* ───────────────────────────── */
 

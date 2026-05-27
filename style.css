@@ -652,3 +652,30 @@ img {
         font-size: 26px;
     }
 }
+
+
+@media (max-width: 600px) {
+  .carousel {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .frame {
+    width: 100%;
+    height: 220px;
+    border-radius: 12px;
+  }
+
+  /* botones más grandes y abajo */
+  .btn {
+    width: 50px;
+    height: 50px;
+    font-size: 26px;
+  }
+
+  /* agrupamos botones en fila */
+  .carousel::after {
+    content: "";
+  }
+}

@@ -553,11 +553,51 @@ img {
 /* ───────────────────────────── */
 
 .carousel {
-    display: flex;
-    flex-direction: row;
-    inline-margin: 50px;
-    aling-items: center;
-    justify-content: spaced-arround;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.frame {
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  background: #111;
+}
+
+.frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.btn {
+  background: #ff7b00;
+  border: none;
+  color: white;
+  font-size: 28px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.25s ease;
+  box-shadow: 0 6px 15px rgba(255, 123, 0, 0.3);
+}
+
+.btn:hover {
+  background: #ff8c1a;
+  transform: scale(1.1);
+}
+
+.btn:active {
+  transform: scale(0.95);
 }
 
 /* ───────────────────────────── */

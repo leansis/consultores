@@ -306,8 +306,6 @@ a {
 }
 
 .screenshot-container {
-    border: 1px solid rgba(0,0,0,.06);
-   
     background: linear-gradient(
         to right,
         #ffffff 0%,

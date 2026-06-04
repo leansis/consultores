@@ -21,12 +21,6 @@
     --accent-soft: rgba(255, 123, 0, 0.12);
 }
 
-.crm-theme {
-    --accent: #ffd000;
-    --accent-light: #fffbe6;
-    --accent-soft: rgba(255, 208, 0, 0.12);
-}
-
 .bpmnG-theme {
     --accent: #ff7b00;
     --accent-light: #fff5eb;
